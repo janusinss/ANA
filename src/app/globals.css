@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-outfit), ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-serif: var(--font-cormorant-garamond), ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+
+  --color-brand-bg: #fff5f5;
+  --color-brand-accent1: #f7d6d0;
+  --color-brand-accent2: #e2b4bd;
+  --color-brand-dark: #4a4a4a;
+}
+
+@layer base {
+  :root {
+    --bg-color: #fff5f5;
+    --text-dark: #4a4a4a;
+  }
+  
+  html, body {
+    @apply m-0 p-0 w-full overflow-x-hidden;
+    background-color: var(--bg-color);
+    color: var(--text-dark);
+    font-family: var(--font-outfit, 'Outfit', sans-serif);
+    
+    /* Hide scrollbar for an immersive app-like feel */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  .font-serif {
+    font-family: var(--font-cormorant-garamond, 'Cormorant Garamond', serif);
+  }
+  
+  .font-sans {
+    font-family: var(--font-outfit, 'Outfit', sans-serif);
+  }
+
+  ::selection {
+    background: #e2b4bd;
+    color: #fff5f5;
+  }
+}
+
+@layer utilities {
+  .text-outline {
+    color: transparent;
+    -webkit-text-stroke: 1px var(--text-dark);
+  }
+}
