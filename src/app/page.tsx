@@ -83,7 +83,7 @@ const profiles = [
   {
     acronym: 'PLEASING LOVING',
     name: 'Paolo Lorenzo Longcob',
-    advocacy: 'Digital literacy and online safety advocacy',
+    advocacy: 'Be Better Than Yesterday',
     keyword: 'Knowledge',
     sympathy: 'Beggars',
     empathy: 'Emotional support',
