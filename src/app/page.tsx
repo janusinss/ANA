@@ -152,7 +152,7 @@ export default function Home() {
       // Separate scroll lock (1 sec) allows user to scroll again before the pan finishes
       setTimeout(() => { 
         isAnimating = false 
-      }, 1500)
+      }, 0)
     }
 
     let observer: globalThis.Observer | null = null;
